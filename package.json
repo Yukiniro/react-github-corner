@@ -23,7 +23,8 @@
     "eslint:fix": "npx eslint --fix src/**/*.tsx",
     "stylelint": "npx stylelint src/**/*.{less,css}",
     "stylelint:fix": "npx stylelint --fix src/**/*.{less,css}",
-    "lint": "npm run prettier:jsx && npm run eslint:fix && npm run stylelint:fix"
+    "lint": "npm run prettier:jsx && npm run eslint:fix && npm run stylelint:fix",
+    "release": "npm publish --access public --registry https://registry.npmjs.org"
   },
   "author": "Yukiniro",
   "keywords": [
