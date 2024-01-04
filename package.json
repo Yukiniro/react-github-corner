@@ -1,7 +1,19 @@
 {
-  "name": "vite-react-template",
-  "version": "0.0.1",
+  "name": "@yukiniro/react-github-corners",
+  "version": "0.1.0",
   "type": "module",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -56,6 +68,7 @@
     "stylelint-prettier": "^4.1.0",
     "typescript": "^5.3.3",
     "vite": "^5.0.10",
+    "vite-plugin-dts": "^3.7.0",
     "vite-plugin-svgr": "^4.2.0"
   }
 }

@@ -32,7 +32,7 @@ export interface GitHubCornersProps extends React.AnchorHTMLAttributes<HTMLAncho
   zIndex?: number;
 }
 
-export default function GithubCorner(props: GitHubCornersProps) {
+export default function GithubCorners(props: GitHubCornersProps) {
   const {
     href,
     size = 80,

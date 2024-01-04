@@ -1,9 +1,9 @@
-import GithubCorner from "./components";
+import GithubCorners from "./components";
 
 function App() {
   return (
     <div className="w-screen h-screen bg-base-100 text-center flex flex-col items-center justify-center relative">
-      <GithubCorner href="https://github.com/Yukiniro/react-github-corner" />
+      <GithubCorners href="https://github.com/Yukiniro/react-github-corner" />
     </div>
   );
 }
