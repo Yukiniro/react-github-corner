@@ -17,7 +17,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:lib": "vite build --config vite.lib.config.ts",
+    "build:lib": "vite build --config vite.lib.config.js",
     "preview": "vite preview",
     "prettier:jsx": "npx prettier --write src/**/*.tsx",
     "eslint": "npx eslint src/**/*.tsx",
