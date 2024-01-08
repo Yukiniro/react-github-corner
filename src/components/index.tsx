@@ -30,19 +30,29 @@ export interface GitHubCornersProps extends React.AnchorHTMLAttributes<HTMLAncho
    * Sets the z-order of a positioned element and its descendants or flex items.
    */
   zIndex?: number;
+  /**
+   * The class name of the corner.
+   */
+  className?: string;
+  /**
+   * The style of the corner.
+   */
+  style?: React.CSSProperties;
 }
 
 export default function GithubCorners(props: GitHubCornersProps) {
   const {
-    href,
+    href = "",
     size = 80,
     bgColor = "rgb(21, 21, 19)",
     color = "rgb(255, 255, 255)",
     position = "right",
     zIndex = 999999,
+    className = "",
+    style,
   } = props;
 
-  const style: React.CSSProperties = useMemo(() => {
+  const mergeStyle: React.CSSProperties = useMemo(() => {
     const baseStyle: React.CSSProperties = {
       zIndex,
       position: "fixed",
@@ -50,6 +60,7 @@ export default function GithubCorners(props: GitHubCornersProps) {
       color: color,
       width: `${size}px`,
       height: `${size}px`,
+      ...style,
     };
 
     if (position === "right") {
@@ -69,10 +80,17 @@ export default function GithubCorners(props: GitHubCornersProps) {
     }
 
     return baseStyle;
-  }, [bgColor, color, position, size, zIndex]);
+  }, [bgColor, color, position, size, style, zIndex]);
 
   return (
-    <svg width="54" height="54" viewBox="0 0 250 250" className="github-corner" style={style} aria-hidden="true">
+    <svg
+      width="54"
+      height="54"
+      viewBox="0 0 250 250"
+      className={`github-corner ${className}`}
+      style={mergeStyle}
+      aria-hidden="true"
+    >
       <a href={href} target="_blank" rel="nofollow sponsored noreferrer">
         <g>
           <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
