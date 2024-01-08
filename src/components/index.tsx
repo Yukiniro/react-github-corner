@@ -76,6 +76,7 @@ export default function GithubCorners(props: GitHubCornersProps) {
         ...baseStyle,
         top: 0,
         left: 0,
+        transform: "scale(-1, 1)",
       };
     }
 
