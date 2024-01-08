@@ -1,18 +1,33 @@
-# vite-react-template
+# React Github Corners
 
-This template is built from vite, ESLint, Prettier, and stylelint.
+SSR friendly React component for _Github Corners_ that can add a _Github Corner_ to your React project.
 
-## Features
+## Installation
 
-- Vite
-- React
-- Eslint
-- Prettier
+```bash
+npm install @yukiniro/react-github-corners
+```
 
-## Useage
+## Usage
 
-`degit Yukiniro/vite-react-template your-project-name`
+```jsx
+import React from "react";
+import GithubCorner from "@yukiniro/react-github-corners";
 
-Install dependencies `pnpm i`
+const App = () => {
+  return <GithubCorner href="https://github.com/Yukiniro/react-github-corners" />;
+};
+```
 
-Run `npx vite`
+## Props
+
+| Name      | Type   | Default | Description                        |
+| --------- | ------ | ------- | ---------------------------------- |
+| href      | string | -       | The link of your Github repository |
+| size      | number | 80      | The size of the corner             |
+| bgColor   | string | #151513 | The background color of the corner |
+| color     | string | #fff    | The color of the octocat           |
+| position  | string | right   | The position of the corner         |
+| zIndex    | number | 999999  | The z-index of the corner          |
+| className | string | -       | The class name of the corner       |
+| style     | object | -       | The style of the corner            |
