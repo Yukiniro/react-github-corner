@@ -8,7 +8,7 @@ const code = `
     size={80}
     bgColor="#151513"
     color="#fff"
-    position="right"
+    position="right" // left or right
     zIndex={999999}
   />
 `;

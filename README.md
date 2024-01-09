@@ -10,12 +10,16 @@ SSR friendly React component for _Github Corners_ that can add a _Github Corner_
 ```bash
 # npm
 npm i @yukiniro/react-github-corners -S
+```
 
+```bash
 # yarn
-yarn add @yukiniro/react-github-corners -S
+yarn add @yukiniro/react-github-corners
+```
 
+```bash
 # pnpm
-pnpm add @yukiniro/react-github-corners -S
+pnpm add @yukiniro/react-github-corners
 ```
 
 ## Usage
