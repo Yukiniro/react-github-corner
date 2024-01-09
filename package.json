@@ -18,7 +18,7 @@
     "dev": "vite",
     "build": "vite build",
     "build:lib": "vite build --config vite.lib.config.js",
-    "doc": "npm run build:lib && rpm run build",
+    "doc": "npm run build:lib && npm run build",
     "preview": "vite preview",
     "prettier:jsx": "npx prettier --write src/**/*.tsx",
     "eslint": "npx eslint src/**/*.tsx",
