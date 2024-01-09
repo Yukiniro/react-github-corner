@@ -1,21 +1,31 @@
 # React Github Corners
 
+![npm](https://img.shields.io/npm/v/@yukiniro/react-github-corners)
+![GitHub License](https://img.shields.io/github/license/yukiniro/react-github-corners)
+
 SSR friendly React component for _Github Corners_ that can add a _Github Corner_ to your React project.
 
 ## Installation
 
 ```bash
-npm install @yukiniro/react-github-corners
+# npm
+npm i @yukiniro/react-github-corners -S
+
+# yarn
+yarn add @yukiniro/react-github-corners -S
+
+# pnpm
+pnpm add @yukiniro/react-github-corners -S
 ```
 
 ## Usage
 
 ```jsx
 import React from "react";
-import GithubCorner from "@yukiniro/react-github-corners";
+import GithubCorners from "@yukiniro/react-github-corners";
 
 const App = () => {
-  return <GithubCorner href="https://github.com/Yukiniro/react-github-corners" />;
+  return <GithubCorners href="https://github.com/Yukiniro/react-github-corners" />;
 };
 ```
 
