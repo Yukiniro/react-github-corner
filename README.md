@@ -26,7 +26,8 @@ pnpm add @yukiniro/react-github-corners
 
 ```jsx
 import React from "react";
-import GithubCorners from "@yukiniro/react-github-corners";
+import GithubCorners from "@yukiniro/react-github-corners"; // import the component
+import "@yukiniro/react-github-corners/dist/style.css"; // import the style
 
 const App = () => {
   return <GithubCorners href="https://github.com/Yukiniro/react-github-corners" />;
