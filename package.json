@@ -1,6 +1,6 @@
 {
   "name": "@yukiniro/react-github-corners",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "main": "dist/index.umd.js",
   "module": "dist/index.js",
@@ -39,7 +39,7 @@
     "url": "https://github.com/Yukiniro/react-github-corners.git"
   },
   "license": "MIT",
-  "homepage": "https://github.com/Yukiniro/react-github-corners",
+  "homepage": "https://react-github-corners-two.vercel.app/",
   "bugs": {
     "email": "yukiniro@hotmail.com",
     "url": "https://github.com/Yukiniro/react-github-corners/issues"
