@@ -1,5 +1,5 @@
 import GithubCorners from "../dist/index";
-import "../dist/style.css";
+import "../dist/index.css";
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 
 const scope = { GithubCorners };
